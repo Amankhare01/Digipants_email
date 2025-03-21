@@ -91,13 +91,9 @@ app.post("/send-data", async (req, res) => {
                 <td style="padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">Budget:</td>
                 <td style="padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">${Budget}</td>
             </tr>
-            <tr>
-                <td style="padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">Message:</td>
-                <td style="padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">${Message}</td>
-            </tr>
         </table>
         <p style="font-size: 16px; color: #555;"><strong>Message:</strong></p>
-        <blockquote style="background-color: #f9f9f9; border-left: 4px solid #007bff; padding: 10px; margin: 10px 0;">${message}</blockquote>
+        <blockquote style="background-color: #f9f9f9; border-left: 4px solid #007bff; padding: 10px; margin: 10px 0;">${Message}</blockquote>
         <p style="font-size: 16px; color: #555;">Please respond to this query as soon as possible.</p>
         <div style="text-align: center; font-size: 14px; color: #777; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px;">
             <p>&copy; 2025 Digipants. All rights reserved.</p>
