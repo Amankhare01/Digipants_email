@@ -40,7 +40,7 @@ app.post("/send-data", async (req, res) => {
     // Contact form logic
     mailOptionsUser = {
       from: "'Digipants' <devs@digipants.com>",
-      to: email, 
+      to: Email, 
       subject: `Digipants - Thank You for Contacting Us`,
       html: `<body style="font-family: Arial, sans-serif; color: #333; padding: 20px; background-color: #f9f9f9;">
     <div style="max-width: 600px; margin: auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #e0e0e0;">
@@ -111,7 +111,7 @@ app.post("/send-data", async (req, res) => {
     // Subscription form logic
     mailOptionsUser = {
       from: "'Digipants' <devs@digipants.com>",
-      to: email, 
+      to: Email, 
       subject: `Digipants - Subscription Confirmation`,
       html: `<body style="font-family: Arial, sans-serif; color: #333; padding: 20px; background-color: #f9f9f9;">
     <div style="max-width: 600px; margin: auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #e0e0e0;">
