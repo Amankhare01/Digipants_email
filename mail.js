@@ -36,7 +36,7 @@ app.post("/send-data", async (req, res) => {
 
   let mailOptionsUser, mailOptionsAdmin;
 
-  if (formType === "Contact-Form") {
+  if (formType === "Contact") {
     // Contact form logic
     mailOptionsUser = {
       from: "'Digipants' <devs@digipants.com>",
