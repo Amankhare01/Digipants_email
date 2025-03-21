@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 // Endpoint to handle email sending
-app.post("/send-email", async (req, res) => {
+app.post("/send-data", async (req, res) => {
   const { Name,Last_Name,Email,Mobile,Budget,Message } = req.body;
 
   if (!Email) {
