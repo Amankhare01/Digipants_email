@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 // Endpoint to handle email sending
 app.post("/send-data", async (req, res) => {
-  const { Name,Last_Name,Email,Mobile,Budget,Message } = req.body;
+  const { Name,Last_Name,Email,formType,Mobile,Budget,Message } = req.body;
 
   if (!Email) {
     return res.status(400).json({ error: "Email is required" });
