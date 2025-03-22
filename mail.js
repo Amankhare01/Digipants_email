@@ -6,11 +6,9 @@ require("dotenv").config();
 const app = express();
 const PORT = 8080;
 
-// Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Redirect to Amazon.com
 app.get("/", (req, res) => {
   res.redirect("https://Digipants.com/");
 });
