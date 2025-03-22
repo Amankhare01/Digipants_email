@@ -27,8 +27,8 @@ app.post("/send-data", async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.user, // Your Gmail address
-      pass: process.env.pass, // Your generated app password
+      user: process.env.user,
+      pass: process.env.pass,
     },
   });
 
