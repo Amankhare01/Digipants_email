@@ -51,7 +51,7 @@ app.post("/send-data", async (req, res) => {
         <h2 style="text-align: center; color: #f77d32;">🙏 Thank You for Contacting Digipants 🙏</h2>
         <p style="margin-top: 20px; font-size: 16px; color: #555;">Hi ${Name},</p>
         <p style="font-size: 16px; color: #555;">Thank you for reaching out. We will get back to you shortly.</p>
-        <p style="font-size: 16px; color: #555;">If you have urgent concerns, contact us at <a href="mailto:support@Digipants.live" style="color: #f77d32; text-decoration: none;">support@Digipants.live</a>.</p>
+        <p style="font-size: 16px; color: #555;">If you have urgent concerns, contact us at <a href="mailto:support@digipants.com" style="color: #f77d32; text-decoration: none;">support@digipants.com</a>.</p>
         <p style="font-size: 16px; color: #555;">Best regards,<br>Digipants Team</p>
         <div style="text-align: center; font-size: 14px; color: #777; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px;">
             <p>&copy; 2025 Digipants. All rights reserved.</p>
