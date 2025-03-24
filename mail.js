@@ -8,18 +8,26 @@ const PORT = 8080;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(express.static(__dirname));
 app.get("/", (req, res) => {
-  res.redirect("https://Digipants.com/");
-});
+  res.sendFile(__dirname + "/index.html");
+})
 
 // Endpoint to handle email sending
 app.post("/send-data", async (req, res) => {
-  const { Name,Last_Name,Email,formType,Mobile,Budget,Message } = req.body;
+  let { Name, Last_Name, Email, formType, Mobile, Budget, Message, Services } = req.body;
 
   if (!Email) {
-    return res.status(400).json({ error: "Email is required" });
+      return res.status(400).json({ error: "Email is required" });
   }
+
+  // Ensure Services is always an array
+  if (!Array.isArray(Services)) {
+      Services = Services ? [Services] : []; // Convert single value to array
+  }
+
+  console.log("Received Data:", req.body); // Debugging
+
 
   // Set up the email transporter (Gmail)
   const transporter = nodemailer.createTransport({

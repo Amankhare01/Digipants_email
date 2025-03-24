@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-block w-form">
+        <form method="POST" name="Contact-Form" id="Contact"
+      class="contact-form-flex" action="/send-data" aria-label="Contact Form">
+          
+          <input type="hidden" name="formType" value="Contact">
+          
+          <div class="flex-space-full no-top-margin">
+            <input type="text" class="field w-input" maxlength="256" name="Name" placeholder="Your name" id="name" required>
+            <input type="text" class="field w-input" maxlength="256" name="Last_Name" placeholder="Your last name" id="lastname" required>
+          </div>
+          
+          <div class="flex-space-full">
+            <input type="email" class="field w-input" maxlength="256" name="Email" placeholder="Email" id="email" required>
+            <input type="tel" class="field w-input" maxlength="256" name="Mobile" placeholder="Mobile" id="mobile" required>
+          </div>
+          
+          <div class="checkbox-container">
+            <div class="flex-checkbox">
+              <label class="w-checkbox checkbox-field">
+                <input type="checkbox" name="Services[]" value="Web Design" class="w-checkbox-input checkbox">
+                <span class="checkbox-label w-form-label">Web Design</span>
+              </label>
+              <label class="w-checkbox checkbox-field">
+                <input type="checkbox" name="Services[]" value="Web Development" class="w-checkbox-input checkbox">
+                <span class="checkbox-label w-form-label">Web Development</span>
+              </label>
+              <label class="w-checkbox checkbox-field">
+                <input type="checkbox" name="Services[]" value="SEO" class="w-checkbox-input checkbox">
+                <span class="checkbox-label w-form-label">SEO</span>
+              </label>
+              <label class="w-checkbox checkbox-field">
+                <input type="checkbox" name="Services[]" value="Social Media Marketing" class="w-checkbox-input checkbox">
+                <span class="checkbox-label w-form-label">Social Media Marketing</span>
+              </label>
+            </div>
+          </div>
+          
+          <select name="Budget" class="select-field w-select" title="budget" required>
+            <option value="">Select Budget</option>
+            <option value="35000 - 75000">35000 - 75000</option>
+            <option value="75000 - 150000">75000 - 150000</option>
+            <option value="150000 - 350000">150000 - 350000</option>
+          </select>
+          
+          <textarea name="Message" maxlength="5000" placeholder="Your message..." class="textarea w-input" required></textarea>
+          
+          <input type="submit" value="Submit" data-wait="Please wait..." class="submit w-button">
+        </form>
+      
+        <div class="success-message w-form-done">
+          <img src="https://www.digipants.com/assets/63238e717124a8c9a4c94e41/632739bc4aa0b9564fd07a4c_check-mark.png" loading="lazy" width="35" alt="">
+          <div class="top-margin">Thank you! Your submission has been received!</div>
+        </div>
+      
+        <div class="error-message-contact w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      
+        
+</body>
+</html>
